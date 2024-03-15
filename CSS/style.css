@@ -1,0 +1,101 @@
+body{
+    padding-top: 75px;
+    margin: 0;
+}
+.navbar{
+    background-color: #fff;
+    border-bottom: 1px solid #E0218A;
+  }
+span{
+    font-size: 1.5em;
+    font-family: "Gabriela", serif;
+    color: #E0218A;
+  }
+  .navbar-toggler{
+    border: none;
+  }
+  .navbar-toggler-icon{
+    width: 30px;
+  }
+  .formalPic{
+    border-radius: 50%;
+    border: 2px solid #E0218A;
+    width: 70%;
+  }
+  .name{
+    font-family: "Gabriela", serif;
+    color: #E0218A;
+  }
+  .single-line {
+    white-space: nowrap; 
+}
+  .buttonHome{
+    width: 40%;
+    color: #fff;
+    background-color: #E0218A;
+  }
+  .buttonHome:hover{
+    color: #fff;
+    background-color: #c5006c;
+  }
+  @media all and (min-width:780px){
+    .img-fluid{
+        width: 100%;
+    }
+  }
+
+  #typewriter {
+    overflow: hidden;
+    border-right: 0.1em solid #E0218A;
+    animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Cursor animation */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #E0218A }
+}
+.colSkills{
+    margin: 1.3rem;
+    width: 8em;
+    height: 8em;
+}
+.colSkills, .cardEducation{
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(121, 74, 74, 0.1);
+    transition: all 0.3s ease;
+}
+.skillsIcon{
+    width: 5em;
+    height: 5em;
+}
+.colSkills:hover, .cardEducation:hover {
+    border-radius: 10px;
+    background-color: #eadfe5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.377);
+}
+.cardEducation{
+    border: none;
+}
+.cardEducation img{
+    max-width: 70%;
+    height: auto;
+    margin: 5px;
+}
+.yearEduc{
+    color: rgb(4, 76, 159);
+    font-weight: 500;
+}
+.formContact{
+    padding: 5%;
+    margin: 0 20%;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(121, 74, 74, 0.1);
+}
