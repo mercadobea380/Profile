@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="icon" type="image/x-icon" href="image/logo.svg">
+  <title>NB Portfolio</title>
+  
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-xxl">
+      <a class="navbar-brand" href="index.html">
+        <span class="fw-bold navbar-collapse justify-content-start align-center">
+          <img src="image/logo.svg" alt="Logo">
+            <div class="col-md d-none d-md-inline">
+              Nishmita Bea
+            </div>
+        </span>
+      </a>
+
+      <!--navbar:toggle-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--navbar:links-->
+      <div class="collapse navbar-collapse justify-content-end align-center" id="navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--main: about-->
+  <section id="about" class="bg-light py-3 justify-content-center">
+    <div class="container-xl">
+      <div class="row align-items-center d-flex justify-content-center">
+        <div class="col-md-4 text-center p-5 mt-4">
+          <span>
+            <img src="image/formal.png" alt="Formal Pic" class="img-fluid formalPic">
+          </span>
+        </div>
+        <div class="col-md-6">
+          <h1 class="font-weight-bold single-line">
+            <div class="display-4">Hi! I am <bold class="name" id="typewriter">Nishmita Bea</bold></div>
+        </h1>               
+          <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam aperiam deleniti adipisci ullam numquam soluta dolore cumque illo placeat natus tenetur, officiis fugit eos, pariatur excepturi ipsam. Asperiores, dicta dolores?
+          </p>
+          <div>
+            <button type="button" class="btn buttonHome">My Projects</button>
+            <button type="button" class="btn buttonHome">Download CV</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--main: skills-->
+  <section class="justify-content-center p-5" id="skills">
+    <h1 class= "titlePage text-center m-5">Technologies I have been working with:</h1>
+    <div class=" shadow container-xxl borderSkills rounded">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-1 text-center colSkills">
+          <img src="image/html.svg" alt="html" class="skillsIcon">
+          <p class="text-center">HTML</p>
+        </div>
+        <div class="col-3 col-md-1 text-center colSkills">
+          <img src="image/css.svg" alt="css" class="skillsIcon">
+          <p class="text-center">CSS</p>
+        </div>
+        <div class="col-3 col-md-1 text-center colSkills">
+          <img src="image/javascript.svg" alt="javascript" class="skillsIcon">
+          <p class="text-center">JavaScript</p>
+        </div>
+        <div class="col-3 col-md-1 text-center colSkills">
+          <img src="image/bootstrap.svg" alt="bootstrap" class="skillsIcon">
+          <p class="text-center">Bootstrap</p>
+        </div>
+        <div class="col-3 col-md-1 text-center colSkills">
+          <img src="image/sass.svg" alt="sass" class="skillsIcon">
+          <p class="text-center">Sass</p>
+        </div>
+        <div class="col-3 col-md-1 text-center colSkills">
+          <img src="image/mysql.svg" alt="mysql" class="skillsIcon">
+          <p>MySQL</p>
+        </div>
+        <div class="col-3 col-md-1 text-center colSkills">
+          <img src="image/python.svg" alt="python" class="skillsIcon">
+          <p>Python</p>
+        </div>
+        <div class="col-3 col-md-1 text-center colSkills">
+          <img src="image/github.svg" alt="github" class="skillsIcon">
+          <p>Github</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--main: education-->
+  <section class="justify-content-center py-3 bg-light" id="education">
+    <div class="container-xxl">
+      <h1 class="titlePage text-center m-5 pt-5">My Education</h1>
+      <div class="card cardEducation my-2 mx-5">
+        <div class="row align-items-center">
+          <div class="col-5 col-md-3 col-l-2 text-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Polytechnic_University_of_the_Philippines.svg/640px-Polytechnic_University_of_the_Philippines.svg.png" alt="PUP logo" class="img-fluid rounded-start">
+          </div>
+          <div class="col-7 col-md-9 col-l-10 ">
+            <div class="card-body">
+              <h3 class="card-title">Bachelor of Science in Information Technology</h3>
+              <p class="card-text">Polytechnic University of the Philippines</p>
+              <p class="card-text yearEduc">2022-2024 | Completed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card cardEducation my-2 mx-5">
+        <div class="row align-items-center">
+          <div class="col-5 col-md-3 col-l-2 text-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Polytechnic_University_of_the_Philippines.svg/640px-Polytechnic_University_of_the_Philippines.svg.png" alt="PUP logo" class="img-fluid rounded-start ">
+          </div>
+          <div class="col-7 col-md-9 col-l-10 ">
+            <div class="card-body">
+              <h3 class="card-title">Diploma in Information Communication Technology</h3>
+              <p class="card-text">Polytechnic University of the Philippines</p>
+              <p class="card-text yearEduc">2019-2022 | Completed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card cardEducation my-2 mx-5">
+        <div class="row align-items-center">
+          <div class="col-5 col-md-3 col-l-2 text-center">
+            <img src="https://www.firstasia.edu.ph/wp-content/uploads/2021/03/Fidelis-SHS-Logo.png" alt="FAITH logo" class="img-fluid rounded-start">
+          </div>
+          <div class="col-7 col-md-9 col-l-10 ">
+            <div class="card-body">
+              <h3 class="card-title">Science, Technology, Engineering, and Mathematics strand</h3>
+              <p class="card-text">FAITH Fidelis Senior High</p>
+              <p class="card-text yearEduc">2017-2019 | Completed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript">
+    $(document).on('click','.navbar-collapse.show',function(e){
+      if($(e.target).is('a')){
+        $(this).collapse('hide')
+      }
+    });
+  </script>
+  <script src="JS/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelectorAll('.navbar-nav .nav-link').forEach(function(elem) {
+      elem.addEventListener('click', function() {
+        var navbarToggler = document.querySelector('.navbar-toggler');
+        if (navbarToggler.getAttribute('aria-expanded') === 'true') {
+          navbarToggler.click();
+        }
+      });
+    });
+  </script>
+  </script>
+</body>
+</html>
