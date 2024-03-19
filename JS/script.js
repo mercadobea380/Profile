@@ -1,3 +1,12 @@
+document.querySelectorAll('.navbar-nav .nav-link').forEach(function(elem) {
+    elem.addEventListener('click', function() {
+      var navbarToggler = document.querySelector('.navbar-toggler');
+      if (navbarToggler.getAttribute('aria-expanded') === 'true') {
+        navbarToggler.click();
+      }
+    });
+  });
+
 (function() {
     var text = document.getElementById('typewriter').textContent.trim();
     document.getElementById('typewriter').textContent = '';
@@ -26,4 +35,28 @@
 
     typewriter();
 })();
+
+document.getElementById("downloadButton").addEventListener("click", function() {
+    var fileContents = "My CV"; 
+    
+    var blob = new Blob([fileContents], { type: "text/plain" });
+    
+    var url = window.URL.createObjectURL(blob);
+    
+    var link = document.createElement("a");
+    
+    link.href = url;
+    
+    link.download = "NIIISH.docx"; 
+    
+    document.body.appendChild(link);
+    
+    link.click();
+    
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
+  });
+
+
+  
 
