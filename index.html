@@ -5,9 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
   <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="icon" type="image/x-icon" href="image/logo.svg">
   <title>NB Portfolio</title>
@@ -43,10 +44,10 @@
             <a class="nav-link" href="#education">Education</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -70,8 +71,9 @@
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam aperiam deleniti adipisci ullam numquam soluta dolore cumque illo placeat natus tenetur, officiis fugit eos, pariatur excepturi ipsam. Asperiores, dicta dolores?
           </p>
           <div>
-            <button type="button" class="btn buttonHome">My Projects</button>
-            <button type="button" class="btn buttonHome">Download CV</button>
+            <a href="#projects" type="button" class=" btn buttonProjects">My Projects</a>
+            
+            <button type="button" class="btn buttonProjects" id="downloadButton">Download CV</button>
           </div>
         </div>
       </div>
@@ -87,7 +89,7 @@
           <img src="image/html.svg" alt="html" class="skillsIcon">
           <p class="text-center">HTML</p>
         </div>
-        <div class="col-3 col-md-1 text-center colSkills">
+        <div class=" col-md-1 text-center colSkills">
           <img src="image/css.svg" alt="css" class="skillsIcon">
           <p class="text-center">CSS</p>
         </div>
@@ -108,12 +110,20 @@
           <p>MySQL</p>
         </div>
         <div class="col-3 col-md-1 text-center colSkills">
+          <img src="image/figma.svg" alt="figma" class="skillsIcon">
+          <p>Figma</p>
+        </div>
+        <div class="col-3 col-md-1 text-center colSkills">
           <img src="image/python.svg" alt="python" class="skillsIcon">
           <p>Python</p>
         </div>
         <div class="col-3 col-md-1 text-center colSkills">
           <img src="image/github.svg" alt="github" class="skillsIcon">
-          <p>Github</p>
+          <p>GitHub</p>
+        </div>
+        <div class="col-3 col-md-1 text-center colSkills">
+          <img src="image/git.svg" alt="git" class="skillsIcon">
+          <p>Git</p>
         </div>
       </div>
     </div>
@@ -125,10 +135,10 @@
       <h1 class="titlePage text-center m-5 pt-5">My Education</h1>
       <div class="card cardEducation my-2 mx-5">
         <div class="row align-items-center">
-          <div class="col-5 col-md-3 col-l-2 text-center">
+          <div class="col-xs-12 col-sm-5 col-md-3 col-l-2 text-center">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Polytechnic_University_of_the_Philippines.svg/640px-Polytechnic_University_of_the_Philippines.svg.png" alt="PUP logo" class="img-fluid rounded-start">
           </div>
-          <div class="col-7 col-md-9 col-l-10 ">
+          <div class="col-xs-12 col-sm-7 col-md-9 col-l-10 ">
             <div class="card-body">
               <h3 class="card-title">Bachelor of Science in Information Technology</h3>
               <p class="card-text">Polytechnic University of the Philippines</p>
@@ -139,10 +149,10 @@
       </div>
       <div class="card cardEducation my-2 mx-5">
         <div class="row align-items-center">
-          <div class="col-5 col-md-3 col-l-2 text-center">
+          <div class="col-xs-12 col-sm-5 col-md-3 col-l-2 text-center">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Polytechnic_University_of_the_Philippines.svg/640px-Polytechnic_University_of_the_Philippines.svg.png" alt="PUP logo" class="img-fluid rounded-start ">
           </div>
-          <div class="col-7 col-md-9 col-l-10 ">
+          <div class="col-xs-12 col-sm-7 col-md-9 col-l-10 ">
             <div class="card-body">
               <h3 class="card-title">Diploma in Information Communication Technology</h3>
               <p class="card-text">Polytechnic University of the Philippines</p>
@@ -153,10 +163,10 @@
       </div>
       <div class="card cardEducation my-2 mx-5">
         <div class="row align-items-center">
-          <div class="col-5 col-md-3 col-l-2 text-center">
+          <div class="col-xs-12 col-sm-5 col-md-3 col-l-2 text-center">
             <img src="https://www.firstasia.edu.ph/wp-content/uploads/2021/03/Fidelis-SHS-Logo.png" alt="FAITH logo" class="img-fluid rounded-start">
           </div>
-          <div class="col-7 col-md-9 col-l-10 ">
+          <div class="col-xs-12 col-sm-7 col-md-9 col-l-10">
             <div class="card-body">
               <h3 class="card-title">Science, Technology, Engineering, and Mathematics strand</h3>
               <p class="card-text">FAITH Fidelis Senior High</p>
@@ -167,6 +177,91 @@
       </div>
     </div>
   </section>
+
+  <!--main: projects-->
+  <section class="justify-content-center py-3" id="projects">
+    <div class="container-xxl">
+      <h1 class="titlePage text-center pt-5">My Projects</h1>
+      <div class="card cardEducation my-2 mx-5">
+        <div class="row align-items-center">
+          <div class="col-xs-12 col-sm-5 col-md-3 col-l-2 text-center">
+            <img src="https://lh3.googleusercontent.com/proxy/nguFZVQqznE87zs1JUiYYgidR6KiY40PV733WBEejOsC594RqFzS_LDuVdfnbQJ_Ng6lgUH19gKdZgTuvS1bsEE5WBEiPB6CJ1PjKq81ziMzw4LjCIUE3ljIkFu-ocxqPt9y0okJDQVqgA" alt="Project Picture" class="img-fluid rounded-start">
+          </div>
+          <div class="col-xs-12 col-sm-7 col-md-9 col-l-10">
+            <div class="card-body">
+              <h3 class="card-title">Organi-Kart: COSTOPA Coop’s Digital Marketplace for Agricultural Product Promotion</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, provident.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card cardEducation my-2 mx-5">
+        <div class="row align-items-center">
+          <div class="col-xs-12 col-sm-5 col-md-3 col-l-2 text-center">
+            <img src="https://lh3.googleusercontent.com/proxy/nguFZVQqznE87zs1JUiYYgidR6KiY40PV733WBEejOsC594RqFzS_LDuVdfnbQJ_Ng6lgUH19gKdZgTuvS1bsEE5WBEiPB6CJ1PjKq81ziMzw4LjCIUE3ljIkFu-ocxqPt9y0okJDQVqgA" alt="Project Picture" class="img-fluid rounded-start">
+          </div>
+          <div class="col-xs-12 col-sm-7 col-md-9 col-l-10">
+            <div class="card-body">
+              <h3 class="card-title">Offline PUP Log and COV-19 Survey Management System</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, provident.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card cardEducation my-2 mx-5">
+        <div class="row align-items-center">
+          <div class="col-xs-12 col-sm-5 col-md-3 col-l-2 text-center">
+            <img src="https://lh3.googleusercontent.com/proxy/nguFZVQqznE87zs1JUiYYgidR6KiY40PV733WBEejOsC594RqFzS_LDuVdfnbQJ_Ng6lgUH19gKdZgTuvS1bsEE5WBEiPB6CJ1PjKq81ziMzw4LjCIUE3ljIkFu-ocxqPt9y0okJDQVqgA" alt="Project Picture" class="img-fluid rounded-start">
+          </div>
+          <div class="col-xs-12 col-sm-7 col-md-9 col-l-10">
+            <div class="card-body">
+              <h3 class="card-title">My Portfolio</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, provident.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!--main: projects-->
+   <section class="justify-content-center py-3 bg-light" id="contact">
+    <div class="container-xxl">
+      <h1 class="titlePage text-center pt-5">Contact Me</h1>
+      <form class="formContact">
+        <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName"  placeholder="Your Full Name">
+        </div>
+        <div class="mb-3">
+            <label for="emailAddress" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="example@mail.com">
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Type your message...">
+            </textarea>
+                    
+        </div>
+        <button type="button" class="btn bg-primary text-light">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="justify-content-center py-3">
+    <div class="container-xxl">
+        <div class="containerFooter">
+          <div class="footerCredit">
+            <h5>Nishmita Bea</h5>
+          </div>
+          <div class="footerLinks">
+            <a href="#"><ion-icon name="logo-github" class="footerIcon"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin" class="footerIcon"></ion-icon></i></a>
+          </div>
+        </div>
+    </div>
+  </footer>
+
   <script type="text/javascript">
     $(document).on('click','.navbar-collapse.show',function(e){
       if($(e.target).is('a')){
@@ -176,16 +271,5 @@
   </script>
   <script src="JS/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.querySelectorAll('.navbar-nav .nav-link').forEach(function(elem) {
-      elem.addEventListener('click', function() {
-        var navbarToggler = document.querySelector('.navbar-toggler');
-        if (navbarToggler.getAttribute('aria-expanded') === 'true') {
-          navbarToggler.click();
-        }
-      });
-    });
-  </script>
-  </script>
 </body>
 </html>
