@@ -29,14 +29,17 @@ span{
   .single-line {
     white-space: nowrap; 
 }
-  .buttonHome{
+  .buttonHome, .buttonProjects{
     width: 40%;
     color: #fff;
     background-color: #E0218A;
   }
-  .buttonHome:hover{
+  .buttonHome:hover, .buttonProjects:hover{
     color: #fff;
     background-color: #c5006c;
+  }
+  .nav-link:hover{
+    border-bottom: 2px solid rgb(4, 76, 159);
   }
   @media all and (min-width:780px){
     .img-fluid{
@@ -60,6 +63,16 @@ span{
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: #E0218A }
+}
+.titlePage{
+  color: rgb(4, 76, 159);
+}
+.titlePage::after{
+  margin: 10px auto;
+  display: block;
+  content: " ";
+  width: 20%;
+  border: 2px solid #E0218A;
 }
 .colSkills{
     margin: 1.3rem;
@@ -94,8 +107,38 @@ span{
 }
 .formContact{
     padding: 5%;
-    margin: 0 20%;
+    margin: 0 10%;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(121, 74, 74, 0.1);
+}
+footer{
+  border-top: 1px solid #E0218A;
+}
+.containerFooter{
+  display: flex;
+  justify-content: space-between;
+}
+.footerCredit{
+  color: #5b5b5b;
+}
+.footerIcon{
+  color: #5b5b5b;
+  height: 30px;
+  width: 40px;
+}
+@media only screen and (max-width: 600px){
+  .colSkills{
+    margin: 1em;
+    width: 4.5em;
+    height: 4.5em;
+}
+  .skillsIcon{
+    margin: auto;
+    width: 3em;
+    height: 4.5em;
+  }
+  .colSkills p{
+    display: none;
+  }
 }
